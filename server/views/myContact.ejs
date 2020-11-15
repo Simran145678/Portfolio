@@ -1,0 +1,58 @@
+<%- include partials/header.ejs %> 
+<%- include partials/main_nav.ejs %>
+  
+
+ 
+
+  <main>
+    <div class="container" style="align-items: center;">
+  
+        <h1 class="display-4">Contact Me</h1>   
+        <hr>
+        
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" aria-describedby="firstName"
+              placeholder="Enter your First Name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" aria-describedby="lasttName"
+              placeholder="Enter your Last Name" required>
+            </div>
+          </div>
+
+          
+          <div class="form-group">
+            <label for="emailAddress">Email address</label>
+            <input type="email" class="form-control" id="emailAddress" aria-describedby="emailAddress"
+            placeholder="Enter your Email" required>
+          </div>
+           <div class="form-group">
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" aria-describedby="contactNumber"
+            placeholder="Enter your Contact Number" required>
+           </div>
+          
+         
+         
+          <button   class="btn btn-primary" id="SubmitButton" onclick="window.location.href='/home'"><i class="fas fa-share-square"></i> Submit</button> </a>         
+          <button type="reset" class="btn btn-warning" id="resetButton"><i class="fas fa-undo"></i> Reset</button>          
+
+        </form>
+    </div>
+    
+
+  </main>
+  <div class="container">
+   <h2>Click on the link below to access contact lists</h2>
+          <a style="font-style: italic;  color:		#031152;	font-family: serif; font-size: large;" class="nav-link" href="/contact-list"> <i class="far fa-list-alt"></i> Contact-List</a>
+        </li>
+  </div>
+  <br>
+  <br>
+
+  <%- include partials/bottom_nav.ejs %>
+ <%- include partials/footer.ejs %>
