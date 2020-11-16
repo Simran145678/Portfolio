@@ -3,6 +3,8 @@ let express = require("express");
 let router = express.Router();
 
 let mongoose = require("mongoose");
+
+let jwt = require("jsonwebtoken");
 //create reference to db schema
 let Contact = require("../models/contact");
 
