@@ -2,6 +2,9 @@
 (function () {
   function Start() {
     console.log("App Started...");
+    $("#myCarousel").carousel({
+      interval: 2000,
+    });
 
     let deleteButtons = document.querySelectorAll(".btn-danger");
 
